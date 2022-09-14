@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="current-info">
+        <div class="date-container">
+          <div class="time">12:00 <span>am/pm</span></div>
+          <div class="date">monday,24,may</div>
+
+          <div class="current-weather">
+            <div class="wether-item1">
+              <div>min temp</div>
+              <div>56.9</div>
+            </div>
+            <div class="wether-item2">
+              <div>max temp</div>
+              <div>56.9</div>
+            </div>
+            <div class="wether-item3">
+              <div>humidity</div>
+              <div>56.9</div>
+            </div>
+            <div class="wether-item4">
+              <div>wind</div>
+              <div>56456.9</div>
+            </div>
+            <div class="wether-item6">
+              <div>sunrise</div>
+              <div>12:34 <span>am?pm</span></div>
+            </div>
+            <div class="wether-item7">
+              <div>sunset</div>
+              <div>12:34 <span>am?pm</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="place-container">
+          <div class="search">
+            <input type="text" id="query" placeholder="city name" />
+            <button OnClick="getData()">search</button>
+          </div>
+          <div class="container1"></div>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="600"
+                height="500"
+                id="gmap_canvas"
+
+                frameborder="0"
+      
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><br />
+            </div>
+          </div>
+          <!-- <div class="time-zone">umaria</div>
+          <div class="country">india</div> -->
+        </div>
+      </div>
+
+     
+    </div>
+    <div class="future">
+        <div class="today" id="current-temp">
+          <img src=http://openweathermap.org/img/wn/10d@2x.png alt=http://openweathermap.org/img/wn/10d@2x.png />
+          <div class="day">MONDAY</div>
+          <div class="temp">night-23.5&#176;C</div>
+          <div class="temp">day-23.5&#176;C</div>
+        </div>
+        <div class="wether-forecast" id="wether-forecast">
+          <div class="wether-forecast-item">
+            <div class="day">TUESDAY</div>
+            <img src=http://openweathermap.org/img/wn/10d@2x.png alt=http://openweathermap.org/img/wn/10d@2x.png />
+            <div class="temp">night-23.5&#176;C</div>
+            <div class="temp">day-23.5&#176;C</div>
+          </div>
+          <div class="wether-forecast-item">
+            <div class="day">WEDNESDAY</div>
+            <img src=http://openweathermap.org/img/wn/10d@2x.png alt=http://openweathermap.org/img/wn/10d@2x.png />
+            <div class="temp">night-23.5&#176;C</div>
+            <div class="temp">day-23.5&#176;C</div>
+          </div>
+          <div class="wether-forecast-item">
+            <div class="day">THURSDAY</div>
+            <img src=http://openweathermap.org/img/wn/10d@2x.png alt=http://openweathermap.org/img/wn/10d@2x.png />
+            <div class="temp">night-23.5&#176;C</div>
+            <div class="temp">day-23.5&#176;C</div>
+          </div>
+          <div class="wether-forecast-item">
+            <div class="day">FRIDAY</div>
+            <img src=http://openweathermap.org/img/wn/10d@2x.png alt=http://openweathermap.org/img/wn/10d@2x.png />
+            <div class="temp">night-23.5&#176;C</div>
+            <div class="temp">day-23.5&#176;C</div>
+          </div>
+          <div class="wether-forecast-item">
+            <div class="day">SATURDAY</div>
+            <img src=http://openweathermap.org/img/wn/10d@2x.png alt=http://openweathermap.org/img/wn/10d@2x.png />
+            <div class="temp">night-23.5&#176;C</div>
+            <div class="temp">day-23.5&#176;C</div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment-with-locales.min.js" integrity="sha512-lQR9pLx+zmyQV/T99+vuBITpGAYXR+nMAZXVjtdEgnC3jodfmtjhRTuAnQ7jHjlWgUL0KE+SORFWdWEp1BYLFw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
